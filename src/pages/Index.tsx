@@ -20,24 +20,24 @@ const Index = () => {
   }
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-background py-8 px-4">
-      <div className="container max-w-4xl mx-auto flex flex-col flex-grow justify-center items-center">
+    <div className="min-h-screen py-8 px-4 bg-background">
+      <div className="container max-w-4xl mx-auto">
         <header className="text-center mb-8">
-          <h1 className="text-3xl md:text-4xl font-bold mb-3">The Wisdom of Chips: Paws & Ponderings</h1>
-          <p className="text-base md:text-lg text-muted-foreground">Life advice from our four-legged philosopher</p>
+          <h1 className="text-3xl md:text-4xl font-bold mb-2">The Wisdom of Chips: Paws & Ponderings</h1>
+          <p className="text-muted-foreground">Life advice from our four-legged philosopher</p>
         </header>
 
-        <main className="w-full flex justify-center">
+        <main>
           <QuoteCard 
             quote={currentQuote} 
             onNewQuote={getRandomQuote} 
           />
         </main>
+        
+        <footer className="mt-12 text-center text-sm text-muted-foreground">
+          <p>Wag more, bark less. © {new Date().getFullYear()} Doggy Wisdom</p>
+        </footer>
       </div>
-      
-      <footer className="w-full mt-auto text-center text-sm text-muted-foreground py-4">
-        <p>Wag more, bark less. Made with love by Mia © {new Date().getFullYear()}</p>
-      </footer>
     </div>
   );
 };
