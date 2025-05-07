@@ -23,8 +23,8 @@ const Index = () => {
     <div className="min-h-screen flex flex-col items-center justify-center bg-background py-8 px-4">
       <div className="container max-w-4xl mx-auto flex flex-col flex-grow justify-center items-center">
         <header className="text-center mb-8">
-          <h1 className="text-4xl md:text-5xl font-bold mb-3">The Wisdom of Chips: Paws & Ponderings</h1>
-          <p className="text-lg md:text-xl text-muted-foreground">Life advice from our four-legged philosopher</p>
+          <h1 className="text-3xl md:text-4xl font-bold mb-3">The Wisdom of Chips: Paws & Ponderings</h1>
+          <p className="text-base md:text-lg text-muted-foreground">Life advice from our four-legged philosopher</p>
         </header>
 
         <main className="w-full flex justify-center">

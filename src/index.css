@@ -49,7 +49,7 @@
 @layer components {
   .quote-text {
     font-family: 'Marck Script', cursive;
-    @apply text-xl md:text-2xl font-bold; /* Reduced by 3: from text-4xl/5xl to text-xl/2xl */
+    @apply text-4xl md:text-5xl font-bold; /* Increased from text-xl/2xl back to text-4xl/5xl */
   }
 }
 
