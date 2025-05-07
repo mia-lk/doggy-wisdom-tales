@@ -25,8 +25,8 @@ const Index = () => {
     <div className={`min-h-screen py-8 px-4 bg-background flex flex-col items-center justify-center ${isMobile ? 'mobile-vh-content' : ''}`}>
       <div className={`container max-w-4xl mx-auto flex-grow flex flex-col justify-center ${isMobile ? 'mobile-content-area' : ''}`}>
         <header className="text-center mb-8">
-          <h1 className="text-3xl md:text-4xl font-bold mb-2">The Wisdom of Chips: Paws & Ponderings</h1>
-          <p className="text-muted-foreground">Life advice from our four-legged philosopher</p>
+          <h1 className="text-3xl md:text-4xl font-bold mb-2">The Wisdom of Chips</h1>
+          <p className="text-muted-foreground">Paws & ponderings from our four-legged philosopher</p>
         </header>
 
         <main className="flex justify-center">
