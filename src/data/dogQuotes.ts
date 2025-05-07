@@ -59,7 +59,7 @@ export const dogQuotes: DogQuote[] = [
   {
     id: "sideeye",
     imagePath: "/lovable-uploads/a5673004-5900-4a00-bc39-d958e7985cd7.png",
-    quote: "Tilt your head. Boom—power move."
+    quote: "Some moments deserve nothing more than a well-timed glance."
   },
   {
     id: "spot",
