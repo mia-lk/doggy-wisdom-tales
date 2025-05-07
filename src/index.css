@@ -47,17 +47,17 @@
 @layer components {
   .quote-text {
     font-family: 'Pacifico', cursive;
-    @apply text-3xl md:text-4xl font-bold text-[calc(1em+2px)];
+    @apply text-3xl md:text-4xl font-medium text-[calc(1em+2px)];
   }
   
   /* Mobile specific styles */
   @media (max-width: 768px) {
     h1.text-3xl {
-      font-size: calc(1.5rem - 3px); /* Making title 3px smaller on mobile */
+      font-size: calc(1.5rem + 2px); /* Making title 2px bigger on mobile */
     }
     
     .quote-text {
-      font-size: calc(1.875rem + 5px); /* Making quotes 5px bigger on mobile */
+      font-size: calc(1.875rem - 2px); /* Making quotes 2px smaller on mobile */
       line-height: 1.2; /* Reducing line height on mobile */
     }
     
