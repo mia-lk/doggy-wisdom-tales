@@ -36,6 +36,8 @@
     --ring: 28 96% 67%;
 
     --radius: 0.75rem;
+    
+    --background: 20 20% 95%;  /* Warm light gray background */
   }
 
   body {
@@ -47,7 +49,7 @@
 @layer components {
   .quote-text {
     font-family: 'Marck Script', cursive;
-    @apply text-4xl md:text-5xl font-bold;
+    @apply text-xl md:text-2xl font-bold; /* Reduced by 3: from text-4xl/5xl to text-xl/2xl */
   }
 }
 

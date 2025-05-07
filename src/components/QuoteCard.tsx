@@ -23,13 +23,13 @@ export const QuoteCard = ({ quote, onNewQuote }: QuoteCardProps) => {
   }, [quote.id]);
 
   return (
-    <div className={`w-full max-w-xl mx-auto ${fadeIn ? 'fade-in' : 'opacity-0'} transition-opacity duration-300`}>
+    <div className={`w-full max-w-lg mx-auto ${fadeIn ? 'fade-in' : 'opacity-0'} transition-opacity duration-300`}>
       <div className="rounded-2xl overflow-hidden shadow-lg bg-white">
         <div className="relative">
           <img
             src={quote.imagePath}
             alt="Dog wisdom"
-            className="w-full h-auto object-cover"
+            className="w-full h-64 object-cover" /* Reduced image size with fixed height */
             onLoad={() => setIsLoading(false)}
           />
           {isLoading && (
@@ -45,8 +45,8 @@ export const QuoteCard = ({ quote, onNewQuote }: QuoteCardProps) => {
           <div className="flex justify-center">
             <button
               onClick={onNewQuote}
-              className="px-6 py-3 bg-primary text-primary-foreground font-medium rounded-full 
-              transition-all duration-300 hover:bg-primary/90 hover:shadow-md active:scale-95"
+              className="px-6 py-3 bg-gray-800 text-white font-bold rounded-md 
+              transition-all duration-300 hover:bg-gray-700 hover:shadow-md active:scale-95"
             >
               Give me another!
             </button>
