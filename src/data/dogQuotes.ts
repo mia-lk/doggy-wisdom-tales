@@ -14,7 +14,7 @@ export const dogQuotes: DogQuote[] = [
   {
     id: "guard",
     imagePath: "/lovable-uploads/c2e8869e-b2bc-4efa-9a03-8e43e9f2d85e.png",
-    quote: "Guard your precious."
+    quote: "Love fiercely. Guard gently."
   },
   {
     id: "life",
