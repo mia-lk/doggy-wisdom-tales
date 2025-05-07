@@ -1,11 +1,42 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import { useRandomQuote } from "@/hooks/useRandomQuote";
+import { QuoteCard } from "@/components/QuoteCard";
+import { useState, useEffect } from "react";
 
 const Index = () => {
+  const { currentQuote, getRandomQuote } = useRandomQuote();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted || !currentQuote) {
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-background">
+        <div className="animate-pulse w-12 h-12 rounded-full bg-primary"></div>
+      </div>
+    );
+  }
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
+    <div className="min-h-screen py-8 px-4 bg-background">
+      <div className="container max-w-4xl mx-auto">
+        <header className="text-center mb-8">
+          <h1 className="text-3xl md:text-4xl font-bold mb-2">Doggy Wisdom Tales</h1>
+          <p className="text-muted-foreground">Life advice from our four-legged philosophers</p>
+        </header>
+
+        <main>
+          <QuoteCard 
+            quote={currentQuote} 
+            onNewQuote={getRandomQuote} 
+          />
+        </main>
+        
+        <footer className="mt-12 text-center text-sm text-muted-foreground">
+          <p>Wag more, bark less. © {new Date().getFullYear()} Doggy Wisdom</p>
+        </footer>
       </div>
     </div>
   );
