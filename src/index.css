@@ -60,6 +60,17 @@
       font-size: calc(1.875rem + 5px); /* Making quotes 5px bigger on mobile */
       line-height: 1.2; /* Reducing line height on mobile */
     }
+    
+    .mobile-vh-content {
+      min-height: 100vh; /* Full viewport height on mobile */
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .mobile-content-area {
+      flex: 1; /* Take remaining space */
+      overflow-y: auto; /* Allow scrolling if content is too tall */
+    }
   }
 }
 
