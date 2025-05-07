@@ -29,7 +29,7 @@ export const QuoteCard = ({ quote, onNewQuote }: QuoteCardProps) => {
           <img
             src={quote.imagePath}
             alt="Dog wisdom"
-            className="w-full h-64 object-cover" /* Reduced image size with fixed height */
+            className="w-full object-contain h-80" /* Changed to object-contain and increased height to 80 (from 64) */
             onLoad={() => setIsLoading(false)}
           />
           {isLoading && (
