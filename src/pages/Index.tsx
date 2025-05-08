@@ -26,7 +26,7 @@ const Index = () => {
       <div className={`container max-w-4xl mx-auto flex-grow flex flex-col justify-center ${isMobile ? 'mobile-content-area' : ''}`}>
         <header className="text-center mb-8">
           <h1 className="text-3xl md:text-4xl font-bold mb-2 text-[#483D3F]" style={{fontSize: 'calc(1.5rem + 3px)'}}>The Wisdom of Chips</h1>
-          <p className="text-muted-foreground">Paws & ponderings from our four-legged philosopher</p>
+          <p className="text-muted-foreground subtitle">Paws & ponderings from our four-legged philosopher</p>
         </header>
 
         <main className="flex justify-center">

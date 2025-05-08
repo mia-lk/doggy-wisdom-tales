@@ -54,6 +54,10 @@
     h1.text-3xl {
       font-size: calc(1.5rem + 8px); /* Making title 5px bigger on desktop compared to mobile */
     }
+    
+    p.subtitle {
+      font-size: calc(1rem + 5px); /* Adding 5px to subtitle on desktop */
+    }
   }
   
   /* Mobile specific styles */
