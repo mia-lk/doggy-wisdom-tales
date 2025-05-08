@@ -7,33 +7,33 @@
 
 @layer base {
   :root {
-    --background: 70 10% 92%; /* ECECE8 */
-    --foreground: 61 57% 15%; /* #393A10 */
+    --background: 46 38% 97%; /* FBF8F2 */
+    --foreground: 27 13% 41%; /* #77685D */
 
     --card: 0 0% 100%;
-    --card-foreground: 61 57% 15%; /* #393A10 */
+    --card-foreground: 27 13% 41%; /* #77685D */
 
     --popover: 0 0% 100%;
-    --popover-foreground: 61 57% 15%; /* #393A10 */
+    --popover-foreground: 27 13% 41%; /* #77685D */
 
-    --primary: 196 29% 60%; /* #62929E */
-    --primary-foreground: 61 57% 15%; /* #393A10 */
+    --primary: 43 62% 95%; /* F9F4EA */
+    --primary-foreground: 345 6% 27%; /* #483D3F */
 
     --secondary: 210 20% 96%;
-    --secondary-foreground: 61 57% 15%; /* #393A10 */
+    --secondary-foreground: 27 13% 41%; /* #77685D */
 
     --muted: 210 20% 96%;
-    --muted-foreground: 186 10% 31%; /* #475657 */
+    --muted-foreground: 22 9% 61%; /* #A39A92 */
 
     --accent: 28 96% 92%;
-    --accent-foreground: 61 57% 15%; /* #393A10 */
+    --accent-foreground: 27 13% 41%; /* #77685D */
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 196 29% 60%; /* #62929E */
+    --ring: 43 62% 95%; /* F9F4EA */
 
     --radius: 0.75rem;
   }
@@ -47,7 +47,7 @@
 @layer components {
   .quote-text {
     font-family: 'Shadows Into Light', cursive;
-    @apply text-3xl md:text-4xl font-medium text-[calc(1em+2px)] text-[#4A6D7C];
+    @apply text-3xl md:text-4xl font-medium text-[calc(1em+4px)] text-[#058ED9];
   }
   
   /* Mobile specific styles */
