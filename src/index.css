@@ -1,4 +1,3 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -47,17 +46,24 @@
 @layer components {
   .quote-text {
     font-family: 'Shadows Into Light', cursive;
-    @apply text-3xl md:text-4xl font-medium text-[calc(1em+7px)] text-[#058ED9];
+    @apply text-3xl md:text-4xl font-medium text-[calc(1em+9px)] text-[#058ED9];
+  }
+  
+  /* Desktop specific styles */
+  @media (min-width: 769px) {
+    h1.text-3xl {
+      font-size: calc(1.5rem + 8px); /* Making title 5px bigger on desktop compared to mobile */
+    }
   }
   
   /* Mobile specific styles */
   @media (max-width: 768px) {
     h1.text-3xl {
-      font-size: calc(1.5rem + 5px); /* Making title 5px bigger on mobile (3px increase) */
+      font-size: calc(1.5rem + 3px); /* Keeping original mobile size */
     }
     
     .quote-text {
-      font-size: calc(1.875rem + 1px); /* Increasing from -2px to +1px (3px increase) */
+      font-size: calc(1.875rem + 7px); /* Keeping original mobile size */
       line-height: 1.2; /* Reducing line height on mobile */
     }
     
