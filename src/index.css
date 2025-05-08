@@ -7,33 +7,33 @@
 
 @layer base {
   :root {
-    --background: 40 33% 98%;
-    --foreground: 30 9% 15%;
+    --background: 195 82% 92%;
+    --foreground: 202 91% 22%;
 
     --card: 0 0% 100%;
-    --card-foreground: 30 9% 15%;
+    --card-foreground: 202 91% 22%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 30 9% 15%;
+    --popover-foreground: 202 91% 22%;
 
-    --primary: 28 96% 67%;
-    --primary-foreground: 30 9% 15%;
+    --primary: 202 91% 51%;
+    --primary-foreground: 0 0% 100%;
 
     --secondary: 210 20% 96%;
-    --secondary-foreground: 30 9% 15%;
+    --secondary-foreground: 202 91% 22%;
 
     --muted: 210 20% 96%;
-    --muted-foreground: 30 5% 45%;
+    --muted-foreground: 215 14% 43%;
 
     --accent: 28 96% 92%;
-    --accent-foreground: 30 9% 15%;
+    --accent-foreground: 202 91% 22%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 28 96% 67%;
+    --ring: 202 91% 51%;
 
     --radius: 0.75rem;
   }
@@ -47,7 +47,7 @@
 @layer components {
   .quote-text {
     font-family: 'Shadows Into Light', cursive;
-    @apply text-3xl md:text-4xl font-medium text-[calc(1em+2px)];
+    @apply text-3xl md:text-4xl font-medium text-[calc(1em+2px)] text-foreground;
   }
   
   /* Mobile specific styles */
