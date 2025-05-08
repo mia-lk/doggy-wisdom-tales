@@ -45,7 +45,7 @@ export const QuoteCard = ({ quote, onNewQuote }: QuoteCardProps) => {
           <div className="flex justify-center">
             <button
               onClick={onNewQuote}
-              className="px-6 py-3 bg-primary text-white font-bold rounded-[5px]
+              className="px-6 py-3 bg-primary text-primary-foreground font-bold rounded-[5px]
               transition-all duration-300 hover:bg-primary/90 hover:shadow-md active:scale-95"
             >
               Give me another!
